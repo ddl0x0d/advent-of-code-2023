@@ -1,11 +1,21 @@
 [versions]
-kotest = "5.8.0"
-kotlin = "1.9.20"
+jsoup           = "1.17.1"
+kotest          = "5.8.0"
+kotlin          = "1.9.20"
+skrapeit        = "1.2.2"
+wiremock        = "3.3.1"
+wiremock-kotlin = "2.1.1"
 
 [libraries]
-kotest-assertions = { module = "io.kotest:kotest-assertions-core" }
-kotest-bom        = { module = "io.kotest:kotest-bom", version.ref = "kotest" }
-kotest-runner     = { module = "io.kotest:kotest-runner-junit5" }
+jsoup               = { module = "org.jsoup:jsoup", version.ref = "jsoup" }
+kotest-assertions   = { module = "io.kotest:kotest-assertions-core" }
+kotest-bom          = { module = "io.kotest:kotest-bom", version.ref = "kotest" }
+kotest-datatest     = { module = "io.kotest:kotest-framework-datatest" }
+kotest-runner       = { module = "io.kotest:kotest-runner-junit5" }
+skarepit-fetcher    = { module = "it.skrape:skrapeit-http-fetcher", version.ref = "skrapeit" }
+skarepit-parser     = { module = "it.skrape:skrapeit-html-parser", version.ref = "skrapeit" }
+wiremock-kotlin     = { module = "com.marcinziolo:kotlin-wiremock", version.ref = "wiremock-kotlin" }
+wiremock-standalone = { module = "org.wiremock:wiremock-standalone", version.ref = "wiremock" }
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

@@ -8,9 +8,15 @@ repositories {
 }
 
 dependencies {
+    implementation(libs.jsoup)
+    implementation(libs.skarepit.fetcher)
+    implementation(libs.skarepit.parser)
     testImplementation(platform(libs.kotest.bom))
     testImplementation(libs.kotest.assertions)
+    testImplementation(libs.kotest.datatest)
     testImplementation(libs.kotest.runner)
+    testImplementation(libs.wiremock.kotlin)
+    testImplementation(libs.wiremock.standalone)
 }
 
 java {
