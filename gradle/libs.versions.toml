@@ -1,5 +1,11 @@
 [versions]
+kotest = "5.8.0"
 kotlin = "1.9.20"
+
+[libraries]
+kotest-assertions = { module = "io.kotest:kotest-assertions-core" }
+kotest-bom        = { module = "io.kotest:kotest-bom", version.ref = "kotest" }
+kotest-runner     = { module = "io.kotest:kotest-runner-junit5" }
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
