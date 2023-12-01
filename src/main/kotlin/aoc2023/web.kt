@@ -13,7 +13,7 @@ data class Day(
     val example: String,
 )
 
-private val headerRegex = "--- Day \\d+: ([\\w\\s]+) ---".toRegex()
+private val headerRegex = "--- Day \\d+: ([\\w\\s?!]+) ---".toRegex()
 
 fun scrape(day: Int): Day = scrape("https://adventofcode.com/$YEAR/day/$day")
 
