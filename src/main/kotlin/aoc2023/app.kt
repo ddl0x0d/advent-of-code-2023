@@ -4,6 +4,7 @@ const val YEAR = 2023
 
 val puzzles = listOf(
     Day01,
+    Day02,
 )
 
 fun main() {

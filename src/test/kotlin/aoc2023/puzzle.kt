@@ -9,6 +9,7 @@ import io.kotest.matchers.shouldBe
 
 val answers = listOf(
     Answers(Day01, 142, 281),
+    Answers(Day02, 8, 2286),
 )
 
 data class Answers<T>(

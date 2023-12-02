@@ -13,7 +13,7 @@ interface Puzzle<INPUT, OUTPUT> {
     fun solve(): Pair<OUTPUT, OUTPUT> {
         val lines = example.readLines()
         val input = parseInput(lines)
-        val part1 = solvePart2(input)
+        val part1 = solvePart1(input)
         val part2 = solvePart2(input)
         return part1 to part2
     }
