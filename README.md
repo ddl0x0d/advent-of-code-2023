@@ -9,3 +9,4 @@ Solutions for [Advent of Code 2023](https://adventofcode.com/2023/) puzzles in [
 | 3   | 🛠⚙🚡 [Gear Ratios](https://adventofcode.com/2023/day/3)                      | ⭐⭐[`Day03`](src/main/kotlin/aoc2023/day03.kt) |
 | 4   | 🎫🔑💰 [Scratchcards](https://adventofcode.com/2023/day/4)                    | ⭐⭐[`Day04`](src/main/kotlin/aoc2023/day04.kt) |
 | 5   | 🌱🧭🌾 [If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5) | ⭐⭐[`Day05`](src/main/kotlin/aoc2023/day05.kt) |
+| 6   | 🚤🏁🏆 [Wait For It](https://adventofcode.com/2023/day/6)                     | ⭐⭐[`Day06`](src/main/kotlin/aoc2023/day06.kt) |
