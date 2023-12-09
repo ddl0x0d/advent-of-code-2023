@@ -12,3 +12,4 @@ Solutions for [Advent of Code 2023](https://adventofcode.com/2023/) puzzles in [
 | 6   | 🚤🏁🏆 [Wait For It](https://adventofcode.com/2023/day/6)                     | ⭐⭐[`Day06`](src/main/kotlin/aoc2023/day06.kt) |
 | 7   | 🏜🐫🃏 [Camel Cards](https://adventofcode.com/2023/day/7)                     | ⭐⭐[`Day07`](src/main/kotlin/aoc2023/day07.kt) |
 | 8   | 👻🧭🏜 [Haunted Wasteland](https://adventofcode.com/2023/day/8)               | ⭐⭐[`Day08`](src/main/kotlin/aoc2023/day08.kt) |
+| 9   | 🏝🔮⏳ [Mirage Maintenance](https://adventofcode.com/2023/day/9)               | ⭐⭐[`Day09`](src/main/kotlin/aoc2023/day09.kt) |
