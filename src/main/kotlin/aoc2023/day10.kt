@@ -24,8 +24,8 @@ object Day10 : Puzzle<Grid<Tile>, Int> {
      * position to the point farthest from the starting position?
      */
     override fun solvePart1(input: Grid<Tile>): Int {
-        val start = input.first { it.symbol == START }
-        val tunnel = input.findTunnel(start)
+        val start = input.first { it.value.symbol == START }
+        val tunnel = input.findTunnel(start.value)
         return (tunnel.size - 1) / 2
     }
 
@@ -33,13 +33,8 @@ object Day10 : Puzzle<Grid<Tile>, Int> {
      * How many tiles are enclosed by the loop?
      */
     override fun solvePart2(input: Grid<Tile>): Int {
-        val start = input.first { it.symbol == START }
-        val tunnel = input.findTunnel(start)
-        // TODO
-        val tunnelSet = tunnel.toSet()
-        val newCells = input.cells.map { if (it in tunnelSet) it else it.copy(symbol = GROUND) }
-        val newGrid = Grid(input.rows, input.cols, newCells)
-        newGrid.print { it.symbol.char }
+        val start = input.first { it.value.symbol == START }
+        val tunnel = input.findTunnel(start.value)
         // TODO
         return 10
     }
@@ -52,9 +47,9 @@ object Day10 : Puzzle<Grid<Tile>, Int> {
             nextMove = tile.symbol.connectors.first {
                 val neighbour = getOrNull(tile.row - it.vy, tile.col + it.vx)
                 neighbour != null && it != nextMove?.opposite?.invoke()
-                        && it.opposite() in neighbour.symbol.connectors
+                        && it.opposite() in neighbour.value.symbol.connectors
             }
-            tile = get(tile.row - nextMove.vy, tile.col + nextMove.vx)
+            tile = get(tile.row - nextMove.vy, tile.col + nextMove.vx).value
             result += tile
         } while (tile != start)
         return result

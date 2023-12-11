@@ -1,26 +1,32 @@
 package aoc2023
 
-class Grid<CELL>(
+class Grid<T>(
     val rows: Int,
     val cols: Int,
-    val cells: List<CELL>,
-) : Iterable<CELL> {
+    val cells: List<Cell<T>>,
+) : Iterable<Grid.Cell<T>> {
 
-    fun getOrNull(row: Int, col: Int): CELL? = getOrNull(row)?.getOrNull(col)
-    operator fun get(row: Int, col: Int): CELL = get(row)[col]
-    fun getOrNull(row: Int): List<CELL>? = if (row < 0 || row >= rows) null else get(row)
-    operator fun get(row: Int): List<CELL> {
+    fun getOrNull(row: Int, col: Int): Cell<T>? = getOrNull(row)?.getOrNull(col)
+    operator fun get(row: Int, col: Int): Cell<T> = getRow(row)[col]
+    fun getOrNull(row: Int): List<Cell<T>>? = if (row < 0 || row >= rows) null else getRow(row)
+
+    fun getRow(row: Int): List<Cell<T>> {
         val start = row * cols
         return cells.slice(start..<(start + cols))
     }
 
-    override fun iterator(): Iterator<CELL> = cells.iterator()
+    fun getCol(col: Int): List<Cell<T>> =
+        cells.filterIndexed { index, _ -> index % cols == col }
 
-    fun print(transform: (CELL) -> Char) {
+    override fun iterator(): Iterator<Cell<T>> = cells.iterator()
+
+    fun print(transform: (Cell<T>) -> Char) {
         cells.chunked(cols).forEach { cells ->
             println(cells.joinToString("") { transform(it).toString() })
         }
     }
+
+    data class Cell<T>(val row: Int, val col: Int, val value: T)
 
     companion object {
         fun <CELL> parse(lines: List<String>, transform: (row: Int, col: Int, char: Char) -> CELL): Grid<CELL> {
@@ -30,7 +36,7 @@ class Grid<CELL>(
                 val row = i / cols
                 val col = i % cols
                 val char = lines[row][col]
-                transform(row, col, char)
+                Cell(row, col, transform(row, col, char))
             }
             return Grid(rows, cols, cells)
         }
