@@ -15,3 +15,4 @@ Solutions for [Advent of Code 2023](https://adventofcode.com/2023/) puzzles in [
 | 9   | 🏝🔮⏳ [Mirage Maintenance](https://adventofcode.com/2023/day/9)               | ⭐⭐[`Day09`](src/main/kotlin/aoc2023/day09.kt) |
 | 10  | ??? [Pipe Maze](https://adventofcode.com/2023/day/10)                         | ⭐⭐[`Day10`](src/main/kotlin/aoc2023/day10.kt) |
 | 11  | ??? [Cosmic Expansion](https://adventofcode.com/2023/day/11)                  | ⭐⭐[`Day11`](src/main/kotlin/aoc2023/day11.kt) |
+| 12  | ??? [Hot Springs](https://adventofcode.com/2023/day/12)                       | ⭐⭐[`Day12`](src/main/kotlin/aoc2023/day12.kt) |
