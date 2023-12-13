@@ -16,3 +16,4 @@ Solutions for [Advent of Code 2023](https://adventofcode.com/2023/) puzzles in [
 | 10  | ??? [Pipe Maze](https://adventofcode.com/2023/day/10)                         | ⭐⭐[`Day10`](src/main/kotlin/aoc2023/day10.kt) |
 | 11  | ??? [Cosmic Expansion](https://adventofcode.com/2023/day/11)                  | ⭐⭐[`Day11`](src/main/kotlin/aoc2023/day11.kt) |
 | 12  | ??? [Hot Springs](https://adventofcode.com/2023/day/12)                       | ⭐⭐[`Day12`](src/main/kotlin/aoc2023/day12.kt) |
+| 13  | ??? [Point of Incidence](https://adventofcode.com/2023/day/13)                | ⭐⭐[`Day13`](src/main/kotlin/aoc2023/day13.kt) |
