@@ -21,6 +21,7 @@ val answers = listOf(
     Answers(Day11, 374, 82_000_210),
 //    Answers(Day12, 21, 525152),
     Answers(Day13, 405, 0),
+    Answers(Day14, 136, 64),
 )
 
 data class Answers<T>(
