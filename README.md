@@ -18,3 +18,4 @@ Solutions for [Advent of Code 2023](https://adventofcode.com/2023/) puzzles in [
 | 12  | ??? [Hot Springs](https://adventofcode.com/2023/day/12)                       | ⭐⭐[`Day12`](src/main/kotlin/aoc2023/day12.kt) |
 | 13  | ??? [Point of Incidence](https://adventofcode.com/2023/day/13)                | ⭐⭐[`Day13`](src/main/kotlin/aoc2023/day13.kt) |
 | 14  | ??? [Parabolic Reflector Dish](https://adventofcode.com/2023/day/14)          | ⭐⭐[`Day14`](src/main/kotlin/aoc2023/day14.kt) |
+| 15  | ??? [Lens Library](https://adventofcode.com/2023/day/15)                      | ⭐⭐[`Day15`](src/main/kotlin/aoc2023/day15.kt) |
